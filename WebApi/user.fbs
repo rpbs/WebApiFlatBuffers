@@ -1,0 +1,14 @@
+﻿namespace FlatBuffersModels;
+
+table Employee {
+    employee_id: int;
+    name: string;
+    email: string;
+}
+
+table Company {
+    company_id: int;
+    employees: [Employee];
+}
+
+root_type Company;
